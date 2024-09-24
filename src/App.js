@@ -1,4 +1,5 @@
 import Menu from "./components/ui/Menu";
+import faq from "./components/Faq";
 
 function App() {
   const headerMenu = [
@@ -29,6 +30,10 @@ function App() {
 
         <div>icons</div>
       </header>
+
+      <section>
+        <faq></faq>
+      </section>
 
       <footer className="flex justify-between items-center px-40">
         <Menu menuItems={gettingStartedMenu} alignment="column"></Menu>
