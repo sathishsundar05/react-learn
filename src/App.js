@@ -2,6 +2,17 @@ import Menu from "./components/ui/Menu";
 import faq from "./components/Faq";
 
 function App() {
+  const getData = async () => {
+    const response = await fetch('https://skillades.com/header.json');
+    const json = await response.json();
+    console.log(json);
+  }
+
+
+  useEffect(() => {
+    getData();
+  })
+
   const headerMenu = [
     {label: 'Shop by category', link: 'https://www.google.com'},
     {label: 'Become a seller', link: 'https://www.yahoo.com'},
